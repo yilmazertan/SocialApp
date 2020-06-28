@@ -35,6 +35,7 @@ namespace ServerApp
             services.Configure<IdentityOptions>(options =>{
                 options.Password.RequireDigit=true;
                 options.Password.RequireLowercase=true;
+                options.Password.RequireUppercase=true;
             });
 
             services.AddControllers().AddNewtonsoftJson();
